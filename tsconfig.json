@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "esnext",
+        "strict": true,
+        "jsx": "preserve",
+        "importHelpers": true,
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "esModuleInterop": true,
+        "noImplicitAny": false,
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true,
+        "baseUrl": ".",
+        "skipLibCheck": true,
+        "resolveJsonModule": true,
+        "types": ["webpack-env", "webpack", "jest", "cypress", "@percy/cypress"],
+        "paths": {
+            "@/*": ["src/*"],
+            "tslib": ["node_modules/tslib/tslib.d.ts"]
+        },
+        "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.tsx",
+        "src/**/*.vue",
+        "tests/**/*.ts",
+        "tests/**/*.tsx",
+        "src/**/*.html",
+        "src/main.js",
+        "src/main.js"
+    ],
+    "exclude": ["node_modules"]
+}
